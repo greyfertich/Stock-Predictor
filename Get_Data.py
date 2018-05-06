@@ -1,6 +1,6 @@
 import pandas_datareader.data as web
 
-class get_Data:
+class GetData:
     def get_price(symbol, start, end):
         df = web.DataReader(symbol, 'iex', start, end)
         df = df.drop('open',1)
